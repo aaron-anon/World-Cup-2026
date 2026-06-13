@@ -1,67 +1,106 @@
+## privacy/index.html
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy – World Cup Live Tracker</title>
-  <style>
-    body {font-family:Helvetica,Arial,sans-serif; margin:0; background:#fafafa; color:#222; line-height:1.6;}
-    header {background:#0d47a1; color:#fff; text-align:center; padding:2rem;}
-    main {max-width:800px; margin:auto; padding:2rem;}
-    h2 {margin-top:1.5rem;}
-    footer {background:#222; color:#fff; text-align:center; padding:1rem; font-size:.9rem;}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - WorldCup 2026</title>
+    <meta name="description" content="Privacy Policy for the WorldCup 2026 app.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚽</text></svg>">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f2f2f7; color: #1c1c1e; line-height: 1.6; }
+        .container { max-width: 700px; margin: 0 auto; padding: 0 20px; }
+        header { background: linear-gradient(135deg, #1a1a2e, #16213e); color: #fff; padding: 50px 0 30px; text-align: center; }
+        header h1 { font-size: 2rem; margin-bottom: 6px; }
+        header p { opacity: 0.85; }
+        .section { padding: 32px 0; }
+        .card { background: #fff; border-radius: 14px; padding: 24px; margin-bottom: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+        .card h2 { font-size: 1.2rem; margin-bottom: 10px; color: #1a1a2e; }
+        .card p { color: #444; font-size: 0.95rem; margin-bottom: 12px; }
+        .card ul { padding-left: 20px; margin-bottom: 12px; }
+        .card ul li { color: #444; font-size: 0.95rem; margin-bottom: 6px; }
+        footer { text-align: center; padding: 30px 0; color: #888; font-size: 0.85rem; border-top: 1px solid #e0e0e0; }
+        footer a { color: #ff9500; text-decoration: none; }
+        .updated { font-size: 0.85rem; color: #888; margin-top: 8px; }
+        @media (max-width: 600px) { header h1 { font-size: 1.5rem; } }
+    </style>
 </head>
 <body>
-<header>
-  <h1>Privacy Policy</h1>
-  <p>World Cup 2026 – Live Tracker</p>
-</header>
+    <header>
+        <div class="container">
+            <h1>Privacy Policy</h1>
+            <p>WorldCup 2026 App</p>
+        </div>
+    </header>
 
-<main>
-  <h2>1. Introduction</h2>
-  <p>We value your privacy. This policy explains how we collect, use,
-     store, and share information when you use the World Cup Live Tracker
-     application.</p>
+    <section class="section">
+        <div class="container">
+            <div class="card">
+                <p class="updated">Last updated: June 14, 2026</p>
+            </div>
 
-  <h2>2. Information We Collect</h2>
-  <ul>
-    <li>Device identifiers (e.g., iOS identifier for vendors, Android Advertising ID) for analytics and ad‑personalisation.</li>
-    <li>Location data (derived from the device’s timezone) to display match times in your local time.</li>
-    <li>Crash and usage analytics collected via third‑party services (e.g., Firebase, Sentry).</li>
-    <li>Optional contact information you provide when contacting support.</li>
-  </ul>
+            <div class="card">
+                <h2>Information We Collect</h2>
+                <p>WorldCup 2026 does not collect, store, or share any personal information. The app operates entirely on your device and does not transmit user data to any server.</p>
+            </div>
 
-  <h2>3. How We Use Your Information</h2>
-  <ul>
-    <li>Provide real‑time scores, standings, and match notifications.</li>
-    <li>Show targeted advertising in accordance with platform policies.</li>
-    <li>Improve the app through aggregated analytics.</li>
-    <li>Respond to support requests.</li>
-  </ul>
+            <div class="card">
+                <h2>Data Storage</h2>
+                <p>The app uses local storage on your device for the following purposes:</p>
+                <ul>
+                    <li><strong>Cache:</strong> Match data, team data, and stadium data are cached locally to reduce network usage and provide offline access.</li>
+                    <li><strong>Preferences:</strong> Your favorite teams, ad removal purchase status, and notification preferences are stored locally on your device.</li>
+                </ul>
+                <p>All stored data remains on your device and is never transmitted to us or any third party.</p>
+            </div>
 
-  <h2>4. Data Sharing & Third‑Party Services</h2>
-  <p>We share limited data with:</p>
-  <ul>
-    <li>Apple App Store / Google Play for distribution.</li>
-    <li>Ad networks (Google Mobile Ads, User Messaging Platform) for serving ads.</li>
-    <li>Analytics providers (e.g., Firebase) for usage statistics.</li>
-  </ul>
+            <div class="card">
+                <h2>Network Requests</h2>
+                <p>The app makes requests to our API server at <strong>worldcup26.ir</strong> (with a fallback to <strong>wc2026.moothz.win</strong>) to fetch match data, team information, and stadium details. No personal information is included in these requests.</p>
+            </div>
 
-  <h2>5. Your Rights</h2>
-  <p>You may request access to, correction of, or deletion of your personal data by contacting us at <a href="mailto:aaronkuo11001@gmail.com">aaronkuo11001@gmail.com</a>.</p>
+            <div class="card">
+                <h2>Notifications</h2>
+                <p>If you grant permission, the app sends local notifications to alert you 15 minutes before a match starts. No push notifications are used, and no data is sent to any server for notification purposes.</p>
+            </div>
 
-  <h2>6. Children’s Privacy</h2>
-  <p>The app is not directed at children under 13. We do not knowingly collect personal data from children.</p>
+            <div class="card">
+                <h2>Advertising</h2>
+                <p>The app displays banner ads using Google AdMob. AdMob may collect device identifiers and usage data to serve personalized ads. You can remove all ads with a one-time in-app purchase. Please refer to Google's privacy policy for more information on their data collection practices.</p>
+            </div>
 
-  <h2>7. Updates to This Policy</h2>
-  <p>We may update this policy from time to time. The “Last Updated” date at the bottom reflects the most recent revision.</p>
+            <div class="card">
+                <h2>In-App Purchases</h2>
+                <p>In-app purchases are processed through Apple's StoreKit. We do not receive or store any payment or financial information. Purchase records are stored locally to manage ad removal status.</p>
+            </div>
 
-  <p><em>Last Updated: June 13, 2026</em></p>
-</main>
+            <div class="card">
+                <h2>Children's Privacy</h2>
+                <p>The app does not knowingly collect any personal information from children under 13 years of age.</p>
+            </div>
 
-<footer>
-  © 2026 World Cup Live Tracker – All rights reserved.
-</footer>
+            <div class="card">
+                <h2>Contact</h2>
+                <p>If you have any questions about this privacy policy, please contact:</p>
+                <p><strong>aaronkuo11001@gmail.com</strong></p>
+            </div>
+
+            <div class="card">
+                <h2>Changes to This Policy</h2>
+                <p>We may update this privacy policy from time to time. Changes will be posted on this page with an updated revision date.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 WorldCup App. All rights reserved.</p>
+            <p><a href="../">Home</a> &middot; <a href="../support/">Support</a></p>
+        </div>
+    </footer>
 </body>
 </html>
+```
